@@ -1,0 +1,37 @@
+/**
+ * Contents
+ *
+ *   1. Imports
+ *   2. Global Styles
+ *   3. Starter Template
+ */
+
+/* 1. Imports
+-------------------------------------------*/
+
+@import "bootstrap-variables";
+@import "bootstrap";
+
+
+/* 2. Global Styles
+-------------------------------------------*/
+
+$fa-font-path: "../fonts/";
+@import "../../../node_modules/font-awesome/scss/font-awesome.scss";
+
+
+/* 3. Starter Template
+-------------------------------------------*/
+
+body {
+  padding-top: 5rem;
+}
+
+.custom-boilerplate {
+  padding: 3rem 1.5rem;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+}
