@@ -45,19 +45,16 @@ class GoogleBooksApi {
     data.items.forEach((item) => {
       this.elements.form.after(`
              <div class="card">
-                 <img class="card-img-left" src='${item.volumeInfo.imageLinks.thumbnail}' alt="Card image cap">
+                 <img class="card-img-left" src="${item.volumeInfo.imageLinks.thumbnail}" alt="Card image cap">
                 <div class="card-body">
-                  <h3 class="card-title">'${item.volumeInfo.title}'</h3>
-                  <h4 class="card-title">'${item.volumeInfo.authors}'</h4>
-                  <p class="card-text">'${item.volumeInfo.description}'</p>
+                  <h3 class="card-title book-title">${item.volumeInfo.title}</h3>
+                  <h4 class="card-title author-name">${item.volumeInfo.authors}</h4>
+                  <p class="card-text">${item.volumeInfo.description}</p>
                </div>
             </div>
         `)
     })
   }
-
-  bookViewer ()
-
 }
 
 const bookSearch = new GoogleBooksApi({})
